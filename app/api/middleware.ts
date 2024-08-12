@@ -53,12 +53,10 @@ function isAllowedOrigin(req: NextRequest): boolean {
     return refererUrl.host === host;
   }
 
-  // Allow requests from localhost during development
   if (process.env.NODE_ENV === 'development' && host?.includes('localhost')) {
     return true;
   }
 
-  // Block all other requests
   return false;
 }
 
