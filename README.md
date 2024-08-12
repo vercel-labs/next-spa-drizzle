@@ -4,11 +4,9 @@
 
 https://next-spa-drizzle.vercel.app/
 
-Here's an API specification for your README file in markdown format, including the different routes, HTTP verbs, and curl examples for each:
-
 ## Endpoints
 
-### /users
+### `/users`
 
 | Method | Description   | Request Body                              | cURL Example                                                                                                                                         |
 | ------ | ------------- | ----------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -17,7 +15,7 @@ Here's an API specification for your README file in markdown format, including t
 | PATCH  | Update a user | `{ "id": number, ...updateData }`         | `curl -X PATCH https://next-spa-drizzle.vercel.app/api/users -H "Content-Type: application/json" -d '{"id":1,"name":"John Updated"}'`                |
 | DELETE | Delete a user | `{ "id": number }`                        | `curl -X DELETE https://next-spa-drizzle.vercel.app/api/users -H "Content-Type: application/json" -d '{"id":1}'`                                     |
 
-### /users/[id]
+### `/users/[id]`
 
 | Method | Description            | URL Params | Request Body                              | cURL Example                                                                                                                     |
 | ------ | ---------------------- | ---------- | ----------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
